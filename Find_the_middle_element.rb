@@ -11,3 +11,20 @@ end
 
 puts givetome([1,2,3]) #2
 puts givetome([3, 5, 2]) #1
+
+
+
+def reverse(str)
+  reversed_str = ''
+  i = str.length - 1
+  while i >= 0
+    reversed_str += str[i]
+    i -= 1
+  end
+  reversed_str
+end
+
+
+puts reverse("Jan")  # Output: "olleh"
+puts reverse("josef")  # Output: "dlrow"
+puts reverse("dorotan")       # Output: ""
